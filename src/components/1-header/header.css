@@ -1,0 +1,162 @@
+/* 
+====================
+table of contents 
+====================
+
+1. Header Design
+2. Button & icon
+3. Modal == pop 
+4. Responsive Design (madia query)
+*/
+
+/*=======================
+    1.table of contents
+=======================*/
+header.flex {
+    justify-content: space-between;
+    padding: 0 1rem;
+    margin-top: 1.2rem;
+    
+}
+
+header.flex nav {
+    background-color: var(--bgHeader);
+    padding: 0.77rem 1.6rem;
+    border-radius: 55px;
+}
+
+header ul.flex {
+    gap: 16px;
+}
+
+header ul li  {
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    color: var(--blue);
+    opacity: 1;
+}
+
+header button {
+    font-size: 1.2rem;
+}
+
+header button.menu {
+    display: none;
+}
+
+/*=======================
+    2. Button & icon
+=======================*/
+header .menu,
+header button.mode {
+    cursor: pointer;
+    background-color: var(--bgHeader);
+    height: 2.4rem;
+    width: 2.4rem;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--subtitle);
+    border: 1px solid rgba(250, 128, 114, 0.249);
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+header .icon-sun{
+    color: rgb(255, 165, 0);
+}
+
+header .menu:hover,
+header button.mode:hover {
+    color: var(--title);
+    border: 1px solid rgb(250, 128, 114);
+}
+
+header .icon-clear {
+    font-size: 1.5rem;
+    color: var(--subtitle);
+    transition: 0.3s;
+}
+
+header .icon-clear:hover {
+    font-size: 1.5rem;
+    color: crimson;
+    rotate: 90deg;
+}
+
+/*=======================
+    3. Modal == pop 
+=======================*/
+header .fixed {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(40, 40, 48, 0.91);
+    z-index: 11;
+    backdrop-filter: blur(8px);
+}
+
+
+@keyframes mymove {
+    0% {
+        scale: 0;
+    }
+
+    60% {
+        scale: 1.2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
+
+header .fixed ul.modal {
+    animation: mymove 0.7s 1;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+}
+
+header .fixed ul.modal li {
+    border-bottom: 1px solid var(--border);
+    padding-top: 0.5rem;
+    padding-bottom: 0.77rem;
+}
+
+header .fixed ul.modal li:first-child {
+    border: none;
+    text-align: right;
+    padding-top: 0;
+    padding-bottom: 0.2rem;
+}
+
+header .fixed ul.modal li:last-child {
+    border: none;
+}
+
+header .fixed ul.modal li a {
+    font-size: 1rem;
+}
+
+/*=======================
+    4. Responsive Design (madia query)
+=======================*/
+@media (max-width: 700px) {
+    header.flex nav {
+        display: none;
+    }
+
+    header button.menu {
+        display: block;
+    }
+}
