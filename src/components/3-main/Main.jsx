@@ -83,10 +83,10 @@ export default function Main() {
                         className="icon-link"
                         href={item.link}
                       ></a>
-                      <a
+                      {/* <a
                         className="icon-github"
                         href={item.github}
-                      ></a>
+                      ></a> */}
                     </div>
                     <a className="link flex" href={item.link} >
                       more <span className="icon-arrow-right"></span>

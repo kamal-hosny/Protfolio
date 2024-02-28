@@ -9,6 +9,14 @@ export const myProjects = [
   },
   {
     id: 2,
+    projectTitle: "Protfolio",
+    category: ["react"],
+    imgPath: "./projects/Reactsjs/protfolio.png",
+    link:"https://protfolio-abdullah-mahmoud.vercel.app/",
+    github:"https://github.com/kamal-hosny/protfolio_Abdullah_Mahmoud"
+  },
+  {
+    id: 3,
     projectTitle: "Penguin",
     category: ["js"],
     imgPath: "./projects/javascript/1.png",
@@ -16,7 +24,7 @@ export const myProjects = [
     github:"https://github.com/kamal-hosny/Penguin"
   },
   {
-    id: 3,
+    id: 4,
     projectTitle: "React.",
     category: ["react"],
     imgPath: "./projects/Reactsjs/2.png",
@@ -24,7 +32,7 @@ export const myProjects = [
     github:"https://github.com/kamal-hosny/React."
   },
   {
-    id: 4,
+    id: 5,
     projectTitle: "ShopGrids",
     category: ["js"],
     imgPath: "./projects/javascript/2.png",
@@ -32,7 +40,7 @@ export const myProjects = [
     github:"https://github.com/kamal-hosny/ShopGrids"
   },
   {
-    id: 5,
+    id: 6,
     projectTitle: "Base",
     category: ["js"],
     imgPath: "./projects/javascript/3.png",
