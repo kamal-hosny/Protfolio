@@ -9,10 +9,10 @@ export const myProjects = [
   },
   {
     id: 2,
-    projectTitle: "Protfolio",
+    projectTitle: "Graphic Protfolio",
     category: ["react"],
-    imgPath: "./projects/Reactsjs/protfolio.png",
-    link:"https://protfolio-abdullah-mahmoud.vercel.app/",
+    imgPath: "./projects/Reactsjs/3.png",
+    link:"https://portfolio-graphic-design-mu.vercel.app/",
     github:"https://github.com/kamal-hosny/protfolio_Abdullah_Mahmoud"
   },
   {
@@ -36,7 +36,7 @@ export const myProjects = [
     projectTitle: "ShopGrids",
     category: ["js"],
     imgPath: "./projects/javascript/2.png",
-    link:"https://react-xi-roan.vercel.app/",
+    link:"https://shop-grids-pi.vercel.app/",
     github:"https://github.com/kamal-hosny/ShopGrids"
   },
   {
